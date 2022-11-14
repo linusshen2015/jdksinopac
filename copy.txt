@@ -1,0 +1,15 @@
+ <driver name=”sqlserver” module=”com.microsoft”>
+ <driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+ <xa-datasource-class>com.microsoft.sqlserver.jdbc.SQLServerXADataSource</xa-datasource-class>
+ </driver>
+
+
+ <datasource jndi-name=”java:jboss/datasources/KeycloakDS” pool-name=”KeycloakDS” enabled=”true” use-java-context=”true”>
+ <connection-url>jdbc:sqlserver://10.11.62.175 :1433;DatabaseName=sitrhsso;</connection-url>
+ <driver>sqlserver</driver>
+ <security>
+ <user-name>IEEADM</user-name>
+ <password>1qaz!QAZ</password>
+ </security>
+ </datasource> 
+
